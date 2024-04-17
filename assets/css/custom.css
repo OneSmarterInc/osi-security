@@ -295,7 +295,7 @@ body {
 }
 
 .mission-container h3::after {
-    border-bottom: 6px solid #fd17b5;
+    border-bottom: 3px solid #fd17b5;
     content: '';
     width: 100px;
     display: block;
@@ -322,7 +322,7 @@ body {
 }
 
 .header-container {
-    background: url(../img/aboutbg4.jpg) no-repeat;
+    /* background: url(../img/aboutbg4.jpg) no-repeat; */
     background-size: cover;
     background-position: top;
     height: 100vh;
@@ -343,7 +343,7 @@ body {
 }
 
 .header-container .wrap h1::after {
-    border-bottom: 4px solid #fd17b5;
+    border-bottom: 3px solid #fd17b5;
     width: 80px;
     padding-top: 15px;
     content: '';
@@ -352,6 +352,7 @@ body {
 
 .vision-container {
     background: #000 !important;
+    
 }
 
 .vision-container p:nth-of-type(2) {
