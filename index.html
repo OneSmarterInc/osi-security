@@ -41,8 +41,16 @@
                 <br />
                 Your Personal Digital Shield<br />
 
-                <p>
-                  <span id="typo" style="color: hotpink"></span>
+                <p style="color: hotpink">
+                  Secure Your
+                  <span
+                    id="typo"
+                    style="
+                      color: azure;
+                      font-weight: 600;
+                      text-decoration: underline;
+                    "
+                  ></span>
                 </p>
 
                 <button
@@ -51,6 +59,10 @@
                     font-size: large;
                     border-radius: 20px;
                     padding: 5px;
+                    border: 2px;
+                    border-style: solid;
+                    border-spacing: 3px;
+                    border-color: azure;
                   "
                 >
                   Book a Call with Us
@@ -217,8 +229,10 @@
         var word = words[wordIndex];
         var wordLength = word.length;
         if (charIndex < wordLength) {
-          document.getElementById("typo").innerHTML =
-            "Secure your " + word.substring(0, charIndex + 1);
+          document.getElementById("typo").innerHTML = word.substring(
+            0,
+            charIndex + 1
+          );
           charIndex++;
           setTimeout(typeWriter, speed);
         } else {
@@ -230,8 +244,10 @@
         var word = words[wordIndex];
         var wordLength = word.length;
         if (charIndex >= 0) {
-          document.getElementById("typo").innerHTML =
-            "Secure your " + word.substring(0, charIndex);
+          document.getElementById("typo").innerHTML = word.substring(
+            0,
+            charIndex
+          );
           charIndex--;
           setTimeout(eraseWord, speed);
         } else {
