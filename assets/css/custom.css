@@ -214,7 +214,7 @@ body {
 }
 
 .group-container h3::after {
-  border-bottom: 2px solid #12dffa;
+  border-bottom: 2px solid #486dca;
   content: "";
   width: 100px;
   display: block;
@@ -237,14 +237,29 @@ body {
 }
 
 .value-container {
-  background: url(../img/aboutbg4.png) no-repeat;
+  /* background: url(../img/aboutbg4.png) no-repeat; */
+  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   color: #fff;
   padding: 80px 40px 50px;
+  background: linear-gradient(-45deg, #717171, #000000, #000000, #848484);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
 .value-container h3 {
   font-size: 2.4em;
   font-weight: 500;
@@ -252,7 +267,7 @@ body {
 }
 
 .value-container h3::after {
-  border-bottom: 2px solid #12dffa;
+  border-bottom: 2px solid #486dca;
   content: "";
   width: 100px;
   display: block;
@@ -291,7 +306,7 @@ body {
 }
 
 .mission-container h3::after {
-  border-bottom: 3px solid #fd17b5;
+  border-bottom: 3px solid #486dca;
   content: "";
   width: 100px;
   display: block;
@@ -339,7 +354,7 @@ body {
 }
 
 .header-container .wrap h1::after {
-  border-bottom: 3px solid #fd17b5;
+  border-bottom: 3px solid #486dca;
   width: 80px;
   padding-top: 15px;
   content: "";
@@ -355,7 +370,7 @@ body {
 }
 
 .vision-container h3::after {
-  border-bottom: 2px solid #12dffa;
+  border-bottom: 2px solid #486dca;
 }
 
 .vision-container::after {
