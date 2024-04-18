@@ -16,6 +16,39 @@
     <link href="assets/css/aos.css" rel="stylesheet" type="text/css" />
 
     <title>OSI Security Service</title>
+    <style>
+      .button-style {
+        width: 300px;
+        font-size: 2rem;
+        border-radius: 20px;
+        padding: 5px;
+        border: none;
+        color: black;
+        background: linear-gradient(-45deg, #65f5d1, #f6f5f5, #ffffff, #8afde1);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        cursor: pointer;
+      }
+    
+      .button-style:hover {
+        background:  #0ba57f;
+        color:white;
+        transform: scale(1.1);
+        transition: transform 0.5s ease-in-out;
+      }
+    
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -27,15 +60,18 @@
             Your browser does not support the video tag.
           </video>
         </div>
-
+        
         <div class="row m-0">
           <div class="wrap">
+            <img src="assets/img/logo.png" alt="" class="img-fluid logo" style="height:100px; width:150px; margin-top:-350px;  background-size: cover;
+            background-position: top;
+            background-attachment: fixed;"/>
             <div class="caption" data-aos="fade-up">
               <h1
-                class="pinkline"
-                data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="1000"
+              class="pinkline"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
               >
                 Welcome to OSI SECURITY SERVICES
                 <br />
@@ -54,23 +90,9 @@
                 </p>
 
                 <button
-                  style="
-                    width: 300px;
-                    font-size: 2rem;
-                    border-radius: 20px;
-                    padding: 5px;
-                    border: 2px;
-                    color:black;
-                    border-style: solid;
-                    border-spacing: 3px;
-                    border-color: azure;
-                    border: none;
-                    background: linear-gradient(-45deg, #378cfc, #f6f5f5, #ffffff, #29a4fc);
-                    background-size: 400% 400%;
-                    animation: gradient 15s ease infinite;
-                  "
-                  onclick="window.location.href='https://calendly.com/onesmarter';"
-                >
+                class="button-style"
+                onclick="window.location.href='https://calendly.com/onesmarter';"
+              >
                   Book a Call with Us
                 </button>
               </h1>
