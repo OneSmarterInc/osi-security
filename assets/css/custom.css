@@ -363,9 +363,17 @@ body {
 
 .vision-container {
   /* background: #000 !important; */
-  background: linear-gradient(-45deg, #284c4d, #000000, #000000, #284c4d);
+  background: linear-gradient(-45deg, #284c4d, #030303, #000000, #366880);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+}
+
+
+.connect-container {
+  /* background: #000 !important; */
+  background: linear-gradient(-45deg, #000000, #060606, #151515, #000000);
+  background-size: 400% 400%;
+  animation: gradient 15s  infinite;
 }
 
 .vision-container p:nth-of-type(2) {
