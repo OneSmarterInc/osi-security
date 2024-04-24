@@ -238,7 +238,7 @@ body {
 
 .value-container {
   /* background: url(../img/aboutbg4.png) no-repeat; */
-  
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -251,13 +251,13 @@ body {
 
 @keyframes gradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 .value-container h3 {
@@ -368,12 +368,11 @@ body {
   animation: gradient 15s ease infinite;
 }
 
-
 .connect-container {
   /* background: #000 !important; */
   background: linear-gradient(-45deg, #000000, #060606, #151515, #000000);
   background-size: 400% 400%;
-  animation: gradient 15s  infinite;
+  animation: gradient 15s infinite;
 }
 
 .vision-container p:nth-of-type(2) {
@@ -388,4 +387,4 @@ body {
   border-bottom: 0px !important;
 }
 
-
+/* Input css */
