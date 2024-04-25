@@ -28,7 +28,34 @@ body {
 
 .custom-container {
   padding: 25px 0 0 0;
+  font-family: "Rajdhani", sans-serif;
+  
 }
+
+.custom-container h3{
+ color:aqua;  
+}
+
+
+.custom-container h1{
+  color:white;  
+ }
+
+ 
+.custom-container h4{
+  color:white;  
+ }
+ 
+.custom-container h5{
+  color:white;  
+ }
+ 
+.custom-container ul{
+  color:white;  
+ }
+.custom-container p{
+  color:white;  
+ }
 
 .col-custom {
   margin: 0 0 25px 0;
@@ -388,3 +415,26 @@ body {
 }
 
 /* Input css */
+
+.carousel-container{
+  padding:10rem;
+}
+
+.carouselExample::after{
+  border-bottom: 2px solid #26d0d7;
+  content: "";
+  left: 40px;
+  right: 40px;
+  bottom: -3px;
+  position: absolute;
+  z-index: 1;
+}
+
+.myhr{
+  border-top: 3px solid #26d0d7;  /* Dotted blue line */
+  width: 95%;
+  margin: auto;
+  
+
+
+}
