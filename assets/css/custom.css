@@ -416,9 +416,22 @@ body {
 
 /* Input css */
 
+
+
 .carousel-container{
   padding:10rem;
 }
+
+
+@media (max-width:768px) {
+
+  
+.carousel-container{
+  padding:10px;
+}
+
+}
+
 
 .carouselExample::after{
   border-bottom: 2px solid #26d0d7;
@@ -429,6 +442,10 @@ body {
   position: absolute;
   z-index: 1;
 }
+
+
+
+
 
 .myhr{
   border-top: 3px solid #26d0d7;  /* Dotted blue line */
