@@ -160,6 +160,15 @@
   cursor: pointer;
 }
 
+
+@media (max-width:768px) {
+
+  .explore-style{
+    font-size: 0.8rem;
+    width: 100px;
+  }
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

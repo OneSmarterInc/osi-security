@@ -428,6 +428,8 @@ body {
   
 .carousel-container{
   padding:10px;
+  font-size: 0.7rem;
+  content:wrap;
 }
 
 }
