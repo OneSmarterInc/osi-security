@@ -13,17 +13,19 @@
   width: 450px;
   margin: 10px auto; /* Center align articles */
   padding: 15px;
-  background-color: #02001e;
+  background-color: #000000;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: auto; /* Remove fixed height */
   overflow: hidden; /* Hide scroll bars */
+
+  border: 1px solid aqua;
 }
 
 .article:hover {
   cursor: pointer;
   scale: 102%;
-  background-color: #09072b;
+  background-color: rgb(44, 44, 44);
 }
 
 .artical-heading {
