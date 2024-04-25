@@ -457,3 +457,30 @@ body {
 
 
 }
+
+
+
+.logo{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 130%;
+  left: 7%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+@media (max-width:768px) {
+
+  .logo{
+    height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 220%;
+                left: 14%;
+                transform: translateX(-50%);
+                z-index: 1000; /* Ensure it's above other content */
+  }
+}
