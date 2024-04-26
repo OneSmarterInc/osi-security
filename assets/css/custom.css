@@ -460,10 +460,19 @@ body {
   border-top: 3px solid #26d0d7;  /* Dotted blue line */
   width: 95%;
   margin: auto;
+}
+
+
+.ft{
+  
+  border-bottom: 2px solid #ffdd03;  /* Dotted blue line */
+  margin-bottom: 10px;
+
   
 
 
 }
+
 
 
 
