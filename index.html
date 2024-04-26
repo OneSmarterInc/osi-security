@@ -107,13 +107,13 @@
             <div class="custom-container mission-container carousel-container">
               <div class="row m-0" data-aos="fade-up">
                 <h3 data-aos="fade-up">
-                  Click with confidence <br />
+                  Click with confidence .<br />
                   Our service shields you from zero-click malware before you
-                  even click !
+                  even click.
                 </h3>
                 <div data-aos="fade-up">
                   <p style="font-size: 1.3rem">
-                    Anti-Zero Click Malware <br />
+                   Click Malware <br />
                     Your phone will equipped with an Independent Cyber Defense
                     System that utilizes blockchain technology to protect
                     against both physical and remote installations of advanced
@@ -225,7 +225,7 @@
               <h3 data-aos="fade-up">ABOUT US</h3>
               <div data-aos="fade-up">
                 <p>
-                  At Krypteon, We help you defend your privacy in this digital
+                  At Krypteon, we help you defend your privacy in this digital
                   realm.
                 </p>
                 <p>
@@ -353,6 +353,15 @@
         </div>
       </div>
 
+      
+      
+      <div class="custom-container mission-container connect-container d-block w-100" style="height: 70vh; padding: 0;">
+        <div id="articleCarousel" class="carousel slide vh-25 " data-bs-ride="carousel" data-aos="zoom-in">
+          <div class="carousel-indicators"></div>
+          <div class="carousel-inner" ></div>
+        </div>
+      </div>
+      
       <div class="custom-container mission-container connect-container">
         <h3 data-aos="fade-up">CONNECT WITH US</h3>
         <div class="row m-0" data-aos="fade-up">
@@ -377,25 +386,23 @@
               >
             </a>
           </p>
-        </div>
-      </div>
-
-      <!-- Articals -->
-      <div class="custom-container mission-container connect-container">
-        <h3 data-aos="fade-up" class="artical-heading">ARTICLES</h3>
-        <div class="artical-row m-0" id="article-container" data-aos="fade-up">
-          <!-- Articles will be dynamically added here -->
-        </div>
-      </div>
-    </div>
-    <div class="custom-container mission-container connect-container">
-      <h3 data-aos="fade-up"></h3>
-      <div class="row m-0" data-aos="fade-up">
+   
         <!-- Button to toggle the privacy policy div -->
+        <br />
         <button
           type="button"
-          class="explore-style"
+        
           onclick="togglePrivacyPolicy()"
+          style="
+          width: 15rem;
+          font-size: 2rem;
+          border-radius: 1rem;
+          padding: 2px;
+          border: none;
+          color: black;
+          cursor: pointer;
+        
+        "
         >
           Privacy Policy
         </button>
@@ -561,6 +568,7 @@
         "Calls",
         "Passwords",
         "ID’s",
+        "Conversations"
       ]; /* List of words to loop through */
       var wordIndex = 0;
       var charIndex = 0;
@@ -577,7 +585,7 @@
           charIndex++;
           setTimeout(typeWriter, speed);
         } else {
-          setTimeout(eraseWord, speed * 10); // Pause for a moment before erasing the word
+          setTimeout(eraseWord, speed * 20); // Pause for a moment before erasing the word
         }
       }
 
@@ -618,49 +626,54 @@
         }
       }
 
-      // Function to render articles on the webpage
       async function renderArticles() {
-        const articlesContainer = document.getElementById("article-container");
-        const articles = await fetchArticles();
+    const articlesContainer = document.querySelector("#articleCarousel .carousel-inner");
+    const indicatorsContainer = document.querySelector("#articleCarousel .carousel-indicators");
+    const articles = await fetchArticles();
 
-        console.log("Articals:", articles);
+    articles.forEach((article, index) => {
+        // Create carousel item
+        const itemElement = document.createElement("div");
+        itemElement.className = "carousel-item custom-container mission-container" + (index === 0 ? " active" : "");
 
-        // Clear the container before rendering new articles
-        articlesContainer.innerHTML = "";
+        // Create content for the item
+        const imageElement = document.createElement("img");
+        imageElement.src = article.image_link;
+        imageElement.alt = article.title;
+        imageElement.className = "d-block"; // Bootstrap classes for full width
+        imageElement.style = "margin:auto; height:350px; width:450px; border-radius:20px;";
+        imageElement.onclick= function() {
+          // window.location.href = article.link;
+          window.open(article.link, '_blank');
+        };
 
-        articles.forEach((article) => {
-          const articleElement = document.createElement("div");
-          articleElement.classList.add("article");
+        const captionElement = document.createElement("div");
+        captionElement.className = "carousel-caption"; // Only show captions on medium screens and up
+        captionElement.innerHTML = `<a href=${article.link} style="text-decoration:none; color:white; text-shadow:1 1 1 1;"><h5>${article.title}</h5></a>`;
 
-          articleElement.onclick = function () {
-            window.open(article.link, "_blank"); // Redirect to the article link on click
-          };
+        // Append the image and caption to the carousel item
+        itemElement.appendChild(imageElement);
+        itemElement.appendChild(captionElement);
 
-          const titleElement = document.createElement("h2");
-          titleElement.textContent = "";
+        // Append the item to the carousel
+        articlesContainer.appendChild(itemElement);
 
-          const imageElement = document.createElement("img");
-          imageElement.src = article.image_link;
-          imageElement.alt = article.title;
+        // Create and append indicators
+        const indicator = document.createElement("button");
+        indicator.setAttribute("type", "button");
+        indicator.setAttribute("data-bs-target", "#articleCarousel");
+        indicator.setAttribute("data-bs-slide-to", index);
+        indicator.className = index === 0 ? "active" : "";
+        indicator.setAttribute("aria-current", index === 0 ? "true" : "");
+        indicator.setAttribute("aria-label", `Slide ${index + 1}`);
 
-          const dateElement = document.createElement("p");
-          dateElement.textContent =
-            "Date Published " + new Date(article.Date).toLocaleDateString();
+        indicatorsContainer.appendChild(indicator);
+    });
+}
 
-          const descriptionElement = document.createElement("h4");
-          descriptionElement.textContent = article.title;
+// Call the renderArticles function to initially render articles
+renderArticles();
 
-          articleElement.appendChild(titleElement);
-          articleElement.appendChild(imageElement);
-          articleElement.appendChild(dateElement);
-          articleElement.appendChild(descriptionElement);
-
-          articlesContainer.appendChild(articleElement);
-        });
-      }
-
-      // Call the renderArticles function to initially render articles
-      renderArticles();
 
       function togglePrivacyPolicy() {
         var x = document.getElementById("privacyPolicyDiv");

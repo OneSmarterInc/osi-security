@@ -1,5 +1,5 @@
 /* Container styling */
-.artical-container {
+/* .artical-container {
   margin: auto;
   margin-top: 50px;
   background-color: none;
@@ -20,6 +20,22 @@
   overflow: hidden; /* Hide scroll bars */
 
   border: 1px solid aqua;
+} */
+
+#article-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  white-space: nowrap; /* Prevents wrapping of elements */
+}
+#articleCarousel .carousel-item img {
+    width: 25%; /* Each image takes up 25% of the slide */
+}
+
+.article {
+  flex: 0 0 auto; /* Prevents flex items from growing and shrinking */
+  margin-right: 20px; /* Adds space between articles */
+  width: 300px; /* Fixed width for each article */
 }
 
 .article:hover {
@@ -193,3 +209,4 @@
 :root{
   color: white;
 }
+

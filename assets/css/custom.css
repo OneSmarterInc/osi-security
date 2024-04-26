@@ -388,6 +388,7 @@ body {
   display: block;
 }
 
+
 .vision-container {
   /* background: #000 !important; */
   background: linear-gradient(-45deg, #284c4d, #030303, #000000, #366880);
@@ -407,11 +408,17 @@ body {
 }
 
 .vision-container h3::after {
-  border-bottom: 2px solid #486dca;
+  border-bottom: 2px solid #48b2ca;
 }
 
 .vision-container::after {
-  border-bottom: 0px !important;
+  border-bottom: 2px solid #26d0d7;
+  content: "";
+  left: 40px;
+  right: 40px;
+  bottom: -3px;
+  position: absolute;
+  z-index: 1;
 }
 
 /* Input css */
