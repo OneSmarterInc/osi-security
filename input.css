@@ -34,7 +34,7 @@
 
 .article {
   flex: 0 0 auto; /* Prevents flex items from growing and shrinking */
-  margin-right: 20px; /* Adds space between articles */
+  
   width: 300px; /* Fixed width for each article */
 }
 
@@ -76,13 +76,12 @@
   .artical-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: space-between;
   }
 
   .article {
     flex: 0 0 calc(33.33% - 20px); /* Adjust width for larger screens */
-    margin: 10px 0; /* Update margin for better spacing */
+    margin: 0; /* Update margin for better spacing */
   }
 }
 
