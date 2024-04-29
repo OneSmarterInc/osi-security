@@ -353,9 +353,8 @@
 
       
       
-      <div class="custom-container mission-container connect-container d-block w-100" style="height: 70vh; padding: 0;">
-        <p style="margin:auto; width:100%; margin-left:47%; padding-top: 18px; color:aqua; z-index: 999999; font-size:2rem;">Articles</p>
-        <div id="articleCarousel" class="carousel slide vh-25 " data-bs-ride="carousel" data-aos="zoom-in">
+      <div class="custom-container mission-container connect-container d-block w-100" >
+        <div id="articleCarousel" class="carousel slide vh-25 " data-bs-ride="carousel" data-aos="zoom-in" style=" padding: 0;">
           
           <div class="carousel-indicators"></div>
           <div class="carousel-inner" ></div>
@@ -528,14 +527,14 @@
     articles.forEach((article, index) => {
         // Create carousel item
         const itemElement = document.createElement("div");
-        itemElement.className = "carousel-item custom-container mission-container" + (index === 0 ? " active" : "");
+        itemElement.className = "carousel-item custom-container " + (index === 0 ? " active" : "");
 
         // Create content for the item
         const imageElement = document.createElement("img");
         imageElement.src = article.image_link;
         imageElement.alt = article.title;
         imageElement.className = "d-block"; // Bootstrap classes for full width
-        imageElement.style = "margin:auto;  min-width:250px; border-radius:20px;";
+        imageElement.style = "margin:auto;  min-width:250px; height:250px; border-radius:20px; opacity:0.6;";
         imageElement.onclick= function() {
           // window.location.href = article.link;
           window.open(article.link, '_blank');
@@ -543,7 +542,7 @@
 
         const captionElement = document.createElement("div");
         captionElement.className = "carousel-caption"; // Only show captions on medium screens and up
-        captionElement.innerHTML = `<a href=${article.link} style="text-decoration:none; color:white; text-shadow:1 1 1 1;"><h5>${article.title}</h5></a>`;
+        captionElement.innerHTML = `<div style=""><a href=${article.link} style="text-decoration:none; color:white; text-shadow: 2px 2px 2px rgba(0,0,0,0.5); "><h5>${article.title}</h5></a></div>`;
 
         // Append the image and caption to the carousel item
         itemElement.appendChild(imageElement);
