@@ -500,3 +500,20 @@ body {
                 z-index: 1000; /* Ensure it's above other content */
   }
 }
+
+
+@media (max-width: 768px) {
+  .mission-container h3 {
+      font-size: 1.2rem; /* smaller font size for mobile */
+      
+  }
+
+  .mission-container p {
+      font-size: 1rem; /* smaller font size for mobile */
+  }
+
+  .explore-style {
+      padding: 12px 24px;
+      font-size: 1.2rem; /* larger button font size for mobile */
+  }
+}
