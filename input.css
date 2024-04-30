@@ -209,3 +209,44 @@
   color: white;
 }
 
+
+
+.faq-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  color:white;
+  font-size:1.5rem;
+  
+}
+
+.faq {
+  margin-bottom: 10px;
+  background-color: #000000;
+  border: 1px solid #00a49f;
+  border-radius: 10px;
+
+
+}
+
+.faq-question {
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:aqua;
+}
+
+
+.faq-answer {
+  display: none;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.arrow{
+  color:white;
+}
