@@ -28,7 +28,34 @@ body {
 
 .custom-container {
   padding: 25px 0 0 0;
+  font-family: "Rajdhani", sans-serif;
+  
 }
+
+.custom-container h3{
+ color:aqua;  
+}
+
+
+.custom-container h1{
+  color:white;  
+ }
+
+ 
+.custom-container h4{
+  color:white;  
+ }
+ 
+.custom-container h5{
+  color:white;  
+ }
+ 
+.custom-container ul{
+  color:white;  
+ }
+.custom-container p{
+  color:white;  
+ }
 
 .col-custom {
   margin: 0 0 25px 0;
@@ -361,6 +388,7 @@ body {
   display: block;
 }
 
+
 .vision-container {
   /* background: #000 !important; */
   background: linear-gradient(-45deg, #284c4d, #030303, #000000, #366880);
@@ -380,11 +408,112 @@ body {
 }
 
 .vision-container h3::after {
-  border-bottom: 2px solid #486dca;
+  border-bottom: 2px solid #48b2ca;
 }
 
 .vision-container::after {
-  border-bottom: 0px !important;
+  border-bottom: 2px solid #26d0d7;
+  content: "";
+  left: 40px;
+  right: 40px;
+  bottom: -3px;
+  position: absolute;
+  z-index: 1;
 }
 
 /* Input css */
+
+
+
+.carousel-container{
+  padding:10rem;
+}
+
+
+@media (max-width:768px) {
+
+  
+.carousel-container{
+  padding:10px;
+  font-size: 0.7rem;
+  content:wrap;
+}
+
+}
+
+
+.carouselExample::after{
+  border-bottom: 2px solid #26d0d7;
+  content: "";
+  left: 40px;
+  right: 40px;
+  bottom: -3px;
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+
+
+.myhr{
+  border-top: 3px solid #26d0d7;  /* Dotted blue line */
+  width: 95%;
+  margin: auto;
+}
+
+
+.ft{
+  
+  border-bottom: 2px solid #ffdd03;  /* Dotted blue line */
+  margin-bottom: 10px;
+
+  
+
+
+}
+
+
+
+
+.logo{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 130%;
+  left: 7%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+@media (max-width:768px) {
+
+  .logo{
+    height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 220%;
+                left: 14%;
+                transform: translateX(-50%);
+                z-index: 1000; /* Ensure it's above other content */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .mission-container h3 {
+      font-size: 1.2rem; /* smaller font size for mobile */
+      
+  }
+
+  .mission-container p {
+      font-size: 1rem; /* smaller font size for mobile */
+  }
+
+  .explore-style {
+      padding: 12px 24px;
+      font-size: 1.2rem; /* larger button font size for mobile */
+  }
+}
