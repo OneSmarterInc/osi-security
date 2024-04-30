@@ -20,21 +20,20 @@
   overflow: hidden; /* Hide scroll bars */
 
   border: 1px solid aqua;
-} */
-
-#article-container {
+}
+*/ #article-container {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
   white-space: nowrap; /* Prevents wrapping of elements */
 }
 #articleCarousel .carousel-item img {
-    width: 25%; /* Each image takes up 25% of the slide */
+  width: 25%; /* Each image takes up 25% of the slide */
 }
 
 .article {
   flex: 0 0 auto; /* Prevents flex items from growing and shrinking */
-  
+
   width: 300px; /* Fixed width for each article */
 }
 
@@ -99,7 +98,6 @@
   }
 }
 
-
 .carousel {
   position: relative;
   overflow: hidden;
@@ -118,11 +116,11 @@
   align-items: center;
   height: 200px; /* Adjust height as needed */
   background-color: rgb(0, 0, 0); /* Placeholder for item styling */
-  color:red;
-  
+  color: red;
 }
 
-.carousel__button--left, .carousel__button--right {
+.carousel__button--left,
+.carousel__button--right {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -140,7 +138,6 @@
 .carousel__button--right {
   right: 10px;
 }
-
 
 .button-style {
   width: 300px;
@@ -162,10 +159,8 @@
   transition: transform 0.5s ease-in-out;
 }
 
-
-@media (max-width:768px) {
-
-  .button-style{
+@media (max-width: 768px) {
+  .button-style {
     font-size: 0.8rem;
     width: 120px;
   }
@@ -184,10 +179,8 @@
   cursor: pointer;
 }
 
-
-@media (max-width:768px) {
-
-  .explore-style{
+@media (max-width: 768px) {
+  .explore-style {
     font-size: 0.8rem;
     width: 100px;
   }
@@ -205,28 +198,23 @@
   }
 }
 
-:root{
+:root {
   color: white;
 }
-
-
 
 .faq-container {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
-  color:white;
-  font-size:1.5rem;
-  
+  color: white;
+  font-size: 1.5rem;
 }
 
 .faq {
   margin-bottom: 10px;
   background-color: #000000;
-  border: 1px solid #00a49f;
+  /* border: 1px solid #00a49f; */
   border-radius: 10px;
-
-
 }
 
 .faq-question {
@@ -237,16 +225,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color:aqua;
+  color: aqua;
 }
-
 
 .faq-answer {
   display: none;
   padding: 10px;
-  border-top: 1px solid #ddd;
+  /* border-top: 1px solid #ddd; */
 }
 
-.arrow{
-  color:white;
+.arrow {
+  color: white;
 }
