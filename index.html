@@ -338,7 +338,7 @@
         <br />
       </div>
     </div>
-<!-- 
+    <!-- 
     <div class="custom-container mission-container">
       <h3 data-aos="fade-up">OUR PARTNERS</h3>
       <div class="row m-0" data-aos="fade-up">
@@ -363,380 +363,404 @@
     </div>
   </div> -->
 
-  <div class="custom-container mission-container">
-    <h3 data-aos="fade-up">FAQ's</h3>
-    <div class="row m-0" data-aos="fade-up">
-      <div class="faq-container">
-        <div class="faq">
-          <div class="faq-question" onclick="toggleAnswer(event, 'answer1')">
-            What kind of encryption do you use ? <span class="arrow" id="arrow1">&#9660;</span>
+    <div class="custom-container mission-container">
+      <h3 data-aos="fade-up">FAQ's</h3>
+      <div class="row m-0" data-aos="fade-up">
+        <div class="faq-container">
+          <div class="faq">
+            <div class="faq-question" onclick="toggleAnswer(event, 'answer1')">
+              What kind of encryption do you use ? <span class="arrow" id="arrow1">&#9660;</span>
+            </div>
+            <div class="faq-answer" id="answer1">
+              We utilize four different encryption algorithms in a method known as multiple encryption. Initially, each
+              file is encrypted with a symmetric key using the first encryption algorithm. Subsequently, the encrypted
+              file is further encrypted with a new key and the second encryption algorithm. This sequence of encryption
+              is
+              repeated four times in total.
+              <br>
+              4 Consecutive Layers of Symmetric Encryption: OTP, AES 256, Blowfish 448 + TwoFish 256.
+            </div>
           </div>
-          <div class="faq-answer" id="answer1">
-            We utilize four different encryption algorithms in a method known as multiple encryption. Initially, each
-            file is encrypted with a symmetric key using the first encryption algorithm. Subsequently, the encrypted
-            file is further encrypted with a new key and the second encryption algorithm. This sequence of encryption is
-            repeated four times in total.
-            <br>
-            4 Consecutive Layers of Symmetric Encryption: OTP, AES 256, Blowfish 448 + TwoFish 256.
-          </div>
-        </div>
-        <div class="faq">
-          <div class="faq-question" onclick="toggleAnswer(event, 'answer2')">
-            What is your key management system?<span class="arrow" id="arrow2">&#9660;</span>
-          </div>
-          <div class="faq-answer" id="answer2">
-            In this encryption system, users generate their own keys, which are neither stored nor shared with third
-            parties, eliminating the need for key management. This system foregoes the complexities of generating,
-            exchanging, storing, using, destroying, and replacing keys. It also simplifies cryptographic protocol
-            design, removes the need for key servers, and negates the necessity of specialized user procedures.
+          <div class="faq">
+            <div class="faq-question" onclick="toggleAnswer(event, 'answer2')">
+              What is your key management system?<span class="arrow" id="arrow2">&#9660;</span>
+            </div>
+            <div class="faq-answer" id="answer2">
+              In this encryption system, users generate their own keys, which are neither stored nor shared with third
+              parties, eliminating the need for key management. This system foregoes the complexities of generating,
+              exchanging, storing, using, destroying, and replacing keys. It also simplifies cryptographic protocol
+              design, removes the need for key servers, and negates the necessity of specialized user procedures.
 
-            Moreover, this approach addresses one of the most formidable challenges in encryption: securely distributing
-            keys to numerous devices in the field without the need for additional technologies. The first layer of
-            encryption utilizes the advanced One-Time Pad (OTP) cipher, renowned for its mathematical robustness against
-            any level of computational attack. This cipher achieves "Perfect Secrecy," meaning that the ciphertext
-            provides no clues about the original plaintext or the key, ensuring that possession of the ciphertext alone
-            is useless for decryption.
+              Moreover, this approach addresses one of the most formidable challenges in encryption: securely
+              distributing
+              keys to numerous devices in the field without the need for additional technologies. The first layer of
+              encryption utilizes the advanced One-Time Pad (OTP) cipher, renowned for its mathematical robustness
+              against
+              any level of computational attack. This cipher achieves "Perfect Secrecy," meaning that the ciphertext
+              provides no clues about the original plaintext or the key, ensuring that possession of the ciphertext
+              alone
+              is useless for decryption.
 
-            The system's design incorporates tamper resistance and a self-destruct feature, enhancing security even if
-            the encryption devices are accessed unauthorizedly or seized. It adheres to Kerckhoffs's principle, which
-            states that a cryptographic system's security should rely solely on the secrecy of the key, not the
-            algorithm or its implementation. This principle ensures that the security integrity remains intact even if
-            the algorithm or system details become public knowledge.
+              The system's design incorporates tamper resistance and a self-destruct feature, enhancing security even if
+              the encryption devices are accessed unauthorizedly or seized. It adheres to Kerckhoffs's principle, which
+              states that a cryptographic system's security should rely solely on the secrecy of the key, not the
+              algorithm or its implementation. This principle ensures that the security integrity remains intact even if
+              the algorithm or system details become public knowledge.
+            </div>
           </div>
-        </div>
-        <div class="faq">
-          <div class="faq-question" onclick="toggleAnswer(event, 'answer3')">
-            Any details about malware protection?<span class="arrow" id="arrow3">&#9660;</span>
+          <div class="faq">
+            <div class="faq-question" onclick="toggleAnswer(event, 'answer3')">
+              Any details about malware protection?<span class="arrow" id="arrow3">&#9660;</span>
+            </div>
+            <div class="faq-answer" id="answer3">
+              Our sophisticated system delivers superior protection
+              against zero-click malware, spyware, and ransomware,
+              meticulously engineered for your specific device. It ensures
+              robust data encryption and maintains invisibility to digital
+              scans, providing relentless defense to secure your
+              confidential information.
+              </p>
+            </div>
           </div>
-          <div class="faq-answer" id="answer3">
-            Our sophisticated system delivers superior protection
-            against zero-click malware, spyware, and ransomware,
-            meticulously engineered for your specific device. It ensures
-            robust data encryption and maintains invisibility to digital
-            scans, providing relentless defense to secure your
-            confidential information.
-            </p>
+          <div class="faq">
+            <div class="faq-question" onclick="toggleAnswer(event, 'answer5')">
+              Can Krypteon decrypt my files? Or, can a third party decrypt my files?<span class="arrow"
+                id="arrow3">&#9660;</span>
+            </div>
+            <div class="faq-answer" id="answer5">
+              No, Encryption and Decryption happens totally offline .
+
+
+
+              The Offline Cipher Machines never get connected even physically (by cables) to the online device for
+              transferring encrypted data.
+              The sender and receiver pre shared their daily pass phrase in order to create on the spot the
+              encryption/decryption keys.Pure OTP Cipher.
+              Encryption Keys are never stored anywhere or exchanged with the communicating party.Encryption Keys are
+              crated on spot by the user and then permanently erased from the cipher machine.
+              </p>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/custom.js"></script>
-  <script src="assets/js/aos.js"></script>
-  <script>
-    function redirectToCrygma() {
-      window.open("https://www.crygma.com/", "_blank");
-    }
-
-    function toggleAnswer(event, id) {
-      var answer = document.getElementById(id);
-      if (answer.style.display === "block") {
-        answer.style.display = "none";
-      } else {
-        answer.style.display = "block";
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+      function redirectToCrygma() {
+        window.open("https://www.crygma.com/", "_blank");
       }
-    }
-  </script>
 
-  <div id="typo"></div>
+      function toggleAnswer(event, id) {
+        var answer = document.getElementById(id);
+        if (answer.style.display === "block") {
+          answer.style.display = "none";
+        } else {
+          answer.style.display = "block";
+        }
+      }
+    </script>
 
-  <script>
-    var words = [
-      "Data",
-      "Location",
-      "Chat",
-      "Calls",
-      "Passwords",
-      "ID’s",
-      "Conversations",
-    ]; /* List of words to loop through */
-    var wordIndex = 0;
-    var charIndex = 0;
-    var speed = 50; /* The speed/duration of the typing effect in milliseconds */
+    <div id="typo"></div>
 
-    function typeWriter() {
-      var word = words[wordIndex];
-      var wordLength = word.length;
-      if (charIndex < wordLength) {
-        document.getElementById("typo").innerHTML = word.substring(
-          0,
-          charIndex + 1
+    <script>
+      var words = [
+        "Data",
+        "Location",
+        "Chat",
+        "Calls",
+        "Passwords",
+        "ID’s",
+        "Conversations",
+      ]; /* List of words to loop through */
+      var wordIndex = 0;
+      var charIndex = 0;
+      var speed = 50; /* The speed/duration of the typing effect in milliseconds */
+
+      function typeWriter() {
+        var word = words[wordIndex];
+        var wordLength = word.length;
+        if (charIndex < wordLength) {
+          document.getElementById("typo").innerHTML = word.substring(
+            0,
+            charIndex + 1
+          );
+          charIndex++;
+          setTimeout(typeWriter, speed);
+        } else {
+          setTimeout(eraseWord, speed * 20); // Pause for a moment before erasing the word
+        }
+      }
+
+      function eraseWord() {
+        var word = words[wordIndex];
+        var wordLength = word.length;
+        if (charIndex >= 0) {
+          document.getElementById("typo").innerHTML = word.substring(
+            0,
+            charIndex
+          );
+          charIndex--;
+          setTimeout(eraseWord, speed);
+        } else {
+          wordIndex = (wordIndex + 1) % words.length; // Move to the next word
+          setTimeout(typeWriter, speed * 5); // Pause before typing the next word
+        }
+      }
+
+      typeWriter(); // Start the typing effect
+    </script>
+
+    <script>
+      // Function to fetch articles from the API
+      async function fetchArticles() {
+        try {
+          const response = await fetch(
+            "https://api.cyberbriefs.org/doc/test_credentials"
+          );
+          console.log("res", response);
+          const data = await response.json();
+          console.log("Data:", data);
+          return data; // Assuming the response contains an array of articles
+        } catch (error) {
+          console.log("erroe", error);
+          // console.error("Error fetching articles:", error);
+          return []; // Return an empty array if there's an error
+        }
+      }
+
+      async function renderArticles() {
+        const articlesContainer = document.querySelector(
+          "#articleCarousel .carousel-inner"
         );
-        charIndex++;
-        setTimeout(typeWriter, speed);
-      } else {
-        setTimeout(eraseWord, speed * 20); // Pause for a moment before erasing the word
-      }
-    }
-
-    function eraseWord() {
-      var word = words[wordIndex];
-      var wordLength = word.length;
-      if (charIndex >= 0) {
-        document.getElementById("typo").innerHTML = word.substring(
-          0,
-          charIndex
+        const indicatorsContainer = document.querySelector(
+          "#articleCarousel .carousel-indicators"
         );
-        charIndex--;
-        setTimeout(eraseWord, speed);
-      } else {
-        wordIndex = (wordIndex + 1) % words.length; // Move to the next word
-        setTimeout(typeWriter, speed * 5); // Pause before typing the next word
+        const articles = await fetchArticles();
+
+        articles.forEach((article, index) => {
+          // Create carousel item
+          const itemElement = document.createElement("div");
+          itemElement.className =
+            "carousel-item custom-container " + (index === 0 ? " active" : "");
+
+          // Create content for the item
+          const imageElement = document.createElement("img");
+          imageElement.src = article.image_link;
+          imageElement.alt = article.title;
+          imageElement.className = "d-block"; // Bootstrap classes for full width
+          imageElement.style =
+            "margin:auto;  min-width:250px; height:250px; border-radius:20px; opacity:0.6;";
+          imageElement.onclick = function () {
+            // window.location.href = article.link;
+            window.open(article.link, "_blank");
+          };
+
+          const captionElement = document.createElement("div");
+          captionElement.className = "carousel-caption"; // Only show captions on medium screens and up
+          captionElement.innerHTML = `<div style=""><a href=${article.link} style="text-decoration:none; color:white; text-shadow: 2px 2px 2px rgba(0,0,0,0.5); "><h5>${article.title}</h5></a></div>`;
+
+          // Append the image and caption to the carousel item
+          itemElement.appendChild(imageElement);
+          itemElement.appendChild(captionElement);
+
+          // Append the item to the carousel
+          articlesContainer.appendChild(itemElement);
+
+          // Create and append indicators
+          const indicator = document.createElement("button");
+          indicator.setAttribute("type", "button");
+          indicator.setAttribute("data-bs-target", "#articleCarousel");
+          indicator.setAttribute("data-bs-slide-to", index);
+          indicator.className = index === 0 ? "active" : "";
+          indicator.setAttribute("aria-current", index === 0 ? "true" : "");
+          indicator.setAttribute("aria-label", `Slide ${index + 1}`);
+
+          indicatorsContainer.appendChild(indicator);
+        });
       }
-    }
 
-    typeWriter(); // Start the typing effect
-  </script>
+      // Call the renderArticles function to initially render articles
+      renderArticles();
 
-  <script>
-    // Function to fetch articles from the API
-    async function fetchArticles() {
-      try {
-        const response = await fetch(
-          "https://api.cyberbriefs.org/doc/test_credentials"
-        );
-        console.log("res", response);
-        const data = await response.json();
-        console.log("Data:", data);
-        return data; // Assuming the response contains an array of articles
-      } catch (error) {
-        console.log("erroe", error);
-        // console.error("Error fetching articles:", error);
-        return []; // Return an empty array if there's an error
+      function togglePrivacyPolicy() {
+        var x = document.getElementById("privacyPolicyDiv");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          window.scrollTo(0, x.offsetTop);
+        } else {
+          x.style.display = "none";
+        }
       }
-    }
 
-    async function renderArticles() {
-      const articlesContainer = document.querySelector(
-        "#articleCarousel .carousel-inner"
-      );
-      const indicatorsContainer = document.querySelector(
-        "#articleCarousel .carousel-indicators"
-      );
-      const articles = await fetchArticles();
+      document
+        .querySelector(".carousel__button--right")
+        .addEventListener("click", function () {
+          const container = document.querySelector(".carousel__container");
+          container.style.transform = "translateX(-100%)"; // Moves the carousel to the left
+        });
 
-      articles.forEach((article, index) => {
-        // Create carousel item
-        const itemElement = document.createElement("div");
-        itemElement.className =
-          "carousel-item custom-container " + (index === 0 ? " active" : "");
+      document
+        .querySelector(".carousel__button--left")
+        .addEventListener("click", function () {
+          const container = document.querySelector(".carousel__container");
+          container.style.transform = "translateX(0)"; // Resets the carousel position
+        });
+    </script>
 
-        // Create content for the item
-        const imageElement = document.createElement("img");
-        imageElement.src = article.image_link;
-        imageElement.alt = article.title;
-        imageElement.className = "d-block"; // Bootstrap classes for full width
-        imageElement.style =
-          "margin:auto;  min-width:250px; height:250px; border-radius:20px; opacity:0.6;";
-        imageElement.onclick = function () {
-          // window.location.href = article.link;
-          window.open(article.link, "_blank");
-        };
+    <footer style="color: white; padding: 5px; margin-left: 10px">
+      <button type="button" onclick="togglePrivacyPolicy()" style="margin: 5px; border-radius: 20px; border: none">
+        Privacy Policy
+      </button>
 
-        const captionElement = document.createElement("div");
-        captionElement.className = "carousel-caption"; // Only show captions on medium screens and up
-        captionElement.innerHTML = `<div style=""><a href=${article.link} style="text-decoration:none; color:white; text-shadow: 2px 2px 2px rgba(0,0,0,0.5); "><h5>${article.title}</h5></a></div>`;
+      <div id="privacyPolicyDiv" style="display: none">
+        <!-- Hidden div for the privacy policy -->
+        <br />
+        <hr />
+        <br />
 
-        // Append the image and caption to the carousel item
-        itemElement.appendChild(imageElement);
-        itemElement.appendChild(captionElement);
+        <h4>Krypteon Privacy Policy</h4>
+        <p>
+          Krypteon takes your privacy seriously. Please read the following to
+          learn more about our privacy policy.
+        </p>
 
-        // Append the item to the carousel
-        articlesContainer.appendChild(itemElement);
+        <p>
+          The federal government and technology industry have developed
+          practical tips to help you guard against internet fraud, secure your
+          computer and protect your personal information.
+        </p>
+        <br />
+        <hr />
+        <br />
+        <h4>How Krypteon Uses Your Personal Information</h4>
+        <p>
+          This policy covers how Krypteon treats personal information that
+          Krypteon collects and receives, including information related to your
+          past use of Krypteon products and services. Personal information is
+          information about you that is personally identifiable like your name,
+          address, email address, or phone number, and that is not otherwise
+          publicly available.
+        </p>
 
-        // Create and append indicators
-        const indicator = document.createElement("button");
-        indicator.setAttribute("type", "button");
-        indicator.setAttribute("data-bs-target", "#articleCarousel");
-        indicator.setAttribute("data-bs-slide-to", index);
-        indicator.className = index === 0 ? "active" : "";
-        indicator.setAttribute("aria-current", index === 0 ? "true" : "");
-        indicator.setAttribute("aria-label", `Slide ${index + 1}`);
+        <p>This privacy policy only applies to Krypteon.</p>
+        <p>
+          This policy does not apply to the practices of companies that Krypteon
+          does not own or control, or to people that Krypteon does not employ or
+          manage.
+        </p>
+        <br />
+        <hr />
+        <br />
+        <h4>Information Collection and Use</h4>
+        <h5>General</h5>
+        <p>
+          Krypteon collects personal and/or business information when you
+          register with Krypteon, when you use Krypteon products or services,
+          when you visit Krypteon pages and/or the pages of certain Krypteon
+          partners. Krypteon may combine information about you that we have with
+          information we obtain from business partners or other affiliated
+          companies.
+        </p>
+        <br />
+        <hr />
+        <br />
+        <h4>Information Sharing and Disclosure</h4>
+        <p>
+          Krypteon does not rent, sell, or share personal information about you
+          with other people or non-affiliated companies except to provide
+          products or services you've requested, when we have your permission,
+          or under the following circumstances:
+        </p>
+        <ul>
+          <li>
+            We provide the information to trusted partners who work on behalf of
+            or with Krypteon under confidentiality agreements.
+          </li>
+          <li>
+            We respond to subpoenas, court orders, or legal process, or to
+            establish or exercise our legal rights or defend against legal
+            claims.
+          </li>
+          <li>
+            We believe it is necessary to share information in order to
+            investigate, prevent, or take action regarding illegal activities,
+            suspected fraud, situations involving potential threats to the
+            physical safety of any person, violations of Krypteon's terms of
+            use, or as otherwise required by law.
+          </li>
+          <li>
+            We transfer information about you if Krypteon is acquired by or
+            merged with another company. In this event, Krypteon will notify you
+            before information about you is transferred and becomes subject to a
+            different privacy policy.
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <br />
+        <h4>Cookies</h4>
+        <p>
+          Krypteon may set and access Krypteon cookies on your computer. Other
+          companies' use of their cookies is subject to their own privacy
+          policies, not this one. Krypteon uses web beacons to access Krypteon
+          cookies inside and outside our network of web sites and in connection
+          with Krypteon products and services.
+        </p>
 
-        indicatorsContainer.appendChild(indicator);
-      });
-    }
+        <h4>
+          Your Ability to Edit and Delete Your Account Information and
+          Preferences
+        </h4>
+        <h5>General</h5>
+        <p>
+          You can edit your Krypteon account information at any time, simply by
+          contacting us. We reserve the right to send you certain communications
+          relating to the Krypteon service, such as service announcements,
+          administrative messages and the Krypteon Newsletter, that are
+          considered part of your Krypteon account, without offering you the
+          opportunity to opt out of receiving them.
+        </p>
+        <br />
+        <hr />
+        <br />
+        <h4>Confidentiality and Security</h4>
+        <p>
+          We limit access to personal information about you to employees who we
+          believe reasonably need to come into contact with that information to
+          provide products or services to you or in order to do their jobs. We
+          have physical, electronic, and procedural safeguards that comply with
+          federal regulations to protect personal information about you.
+        </p>
+        <br />
+        <hr />
+        <br />
+        <h4>Changes to This Privacy Policy</h4>
+        <p>
+          Krypteon may update this policy from time to time. We will notify you
+          about significant changes in the way we treat personal information by
+          sending a notice to the primary email address specified in your
+          Krypteon account or by placing a prominent notice on our site.
+        </p>
+        <br />
+        <hr />
+        <br />
+        <h4>Questions and Suggestions</h4>
+        <p>
+          If you have questions, suggestions, or wish to make a complaint,
+          please contact us at: Krypteon Inc. &nbsp (<a href="mailto:info@Krypteon.com">
+            info@krypteon.com </a>)
+        </p>
 
-    // Call the renderArticles function to initially render articles
-    renderArticles();
+        <hr />
+        <br />
+      </div>
 
-    function togglePrivacyPolicy() {
-      var x = document.getElementById("privacyPolicyDiv");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-        window.scrollTo(0, x.offsetTop);
-      } else {
-        x.style.display = "none";
-      }
-    }
-
-    document
-      .querySelector(".carousel__button--right")
-      .addEventListener("click", function () {
-        const container = document.querySelector(".carousel__container");
-        container.style.transform = "translateX(-100%)"; // Moves the carousel to the left
-      });
-
-    document
-      .querySelector(".carousel__button--left")
-      .addEventListener("click", function () {
-        const container = document.querySelector(".carousel__container");
-        container.style.transform = "translateX(0)"; // Resets the carousel position
-      });
-  </script>
-
-  <footer style="color: white; padding: 5px; margin-left: 10px">
-    <button type="button" onclick="togglePrivacyPolicy()" style="margin: 5px; border-radius: 20px; border: none">
-      Privacy Policy
-    </button>
-
-    <div id="privacyPolicyDiv" style="display: none">
-      <!-- Hidden div for the privacy policy -->
-      <br />
-      <hr />
-      <br />
-
-      <h4>Krypteon Privacy Policy</h4>
-      <p>
-        Krypteon takes your privacy seriously. Please read the following to
-        learn more about our privacy policy.
-      </p>
-
-      <p>
-        The federal government and technology industry have developed
-        practical tips to help you guard against internet fraud, secure your
-        computer and protect your personal information.
-      </p>
-      <br />
-      <hr />
-      <br />
-      <h4>How Krypteon Uses Your Personal Information</h4>
-      <p>
-        This policy covers how Krypteon treats personal information that
-        Krypteon collects and receives, including information related to your
-        past use of Krypteon products and services. Personal information is
-        information about you that is personally identifiable like your name,
-        address, email address, or phone number, and that is not otherwise
-        publicly available.
-      </p>
-
-      <p>This privacy policy only applies to Krypteon.</p>
-      <p>
-        This policy does not apply to the practices of companies that Krypteon
-        does not own or control, or to people that Krypteon does not employ or
-        manage.
-      </p>
-      <br />
-      <hr />
-      <br />
-      <h4>Information Collection and Use</h4>
-      <h5>General</h5>
-      <p>
-        Krypteon collects personal and/or business information when you
-        register with Krypteon, when you use Krypteon products or services,
-        when you visit Krypteon pages and/or the pages of certain Krypteon
-        partners. Krypteon may combine information about you that we have with
-        information we obtain from business partners or other affiliated
-        companies.
-      </p>
-      <br />
-      <hr />
-      <br />
-      <h4>Information Sharing and Disclosure</h4>
-      <p>
-        Krypteon does not rent, sell, or share personal information about you
-        with other people or non-affiliated companies except to provide
-        products or services you've requested, when we have your permission,
-        or under the following circumstances:
-      </p>
-      <ul>
-        <li>
-          We provide the information to trusted partners who work on behalf of
-          or with Krypteon under confidentiality agreements.
-        </li>
-        <li>
-          We respond to subpoenas, court orders, or legal process, or to
-          establish or exercise our legal rights or defend against legal
-          claims.
-        </li>
-        <li>
-          We believe it is necessary to share information in order to
-          investigate, prevent, or take action regarding illegal activities,
-          suspected fraud, situations involving potential threats to the
-          physical safety of any person, violations of Krypteon's terms of
-          use, or as otherwise required by law.
-        </li>
-        <li>
-          We transfer information about you if Krypteon is acquired by or
-          merged with another company. In this event, Krypteon will notify you
-          before information about you is transferred and becomes subject to a
-          different privacy policy.
-        </li>
-      </ul>
-      <br />
-      <hr />
-      <br />
-      <h4>Cookies</h4>
-      <p>
-        Krypteon may set and access Krypteon cookies on your computer. Other
-        companies' use of their cookies is subject to their own privacy
-        policies, not this one. Krypteon uses web beacons to access Krypteon
-        cookies inside and outside our network of web sites and in connection
-        with Krypteon products and services.
-      </p>
-
-      <h4>
-        Your Ability to Edit and Delete Your Account Information and
-        Preferences
-      </h4>
-      <h5>General</h5>
-      <p>
-        You can edit your Krypteon account information at any time, simply by
-        contacting us. We reserve the right to send you certain communications
-        relating to the Krypteon service, such as service announcements,
-        administrative messages and the Krypteon Newsletter, that are
-        considered part of your Krypteon account, without offering you the
-        opportunity to opt out of receiving them.
-      </p>
-      <br />
-      <hr />
-      <br />
-      <h4>Confidentiality and Security</h4>
-      <p>
-        We limit access to personal information about you to employees who we
-        believe reasonably need to come into contact with that information to
-        provide products or services to you or in order to do their jobs. We
-        have physical, electronic, and procedural safeguards that comply with
-        federal regulations to protect personal information about you.
-      </p>
-      <br />
-      <hr />
-      <br />
-      <h4>Changes to This Privacy Policy</h4>
-      <p>
-        Krypteon may update this policy from time to time. We will notify you
-        about significant changes in the way we treat personal information by
-        sending a notice to the primary email address specified in your
-        Krypteon account or by placing a prominent notice on our site.
-      </p>
-      <br />
-      <hr />
-      <br />
-      <h4>Questions and Suggestions</h4>
-      <p>
-        If you have questions, suggestions, or wish to make a complaint,
-        please contact us at: Krypteon Inc. &nbsp (<a href="mailto:info@Krypteon.com">
-          info@krypteon.com </a>)
-      </p>
-
-      <hr />
-      <br />
-    </div>
-
-    &copy; 2024 Krypteon inc. All rights reserved
-  </footer>
+      &copy; 2024 Krypteon inc. All rights reserved
+    </footer>
 </body>
 
 </html>
