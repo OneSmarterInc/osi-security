@@ -371,7 +371,7 @@
             <div class="faq-question" onclick="toggleAnswer(event, 'answer1')">
               What kind of encryption do you use ? <span class="arrow" id="arrow1">&#9660;</span>
             </div>
-            <div class="faq-answer" id="answer1">
+            <div class="faq-answer" id="answer1" data-aos="fade-up">
               We utilize four different encryption algorithms in a method known as multiple encryption. Initially, each
               file is encrypted with a symmetric key using the first encryption algorithm. Subsequently, the encrypted
               file is further encrypted with a new key and the second encryption algorithm. This sequence of encryption
@@ -387,25 +387,7 @@
             </div>
             <div class="faq-answer" id="answer2">
               In this encryption system, users generate their own keys, which are neither stored nor shared with third
-              parties, eliminating the need for key management. This system foregoes the complexities of generating,
-              exchanging, storing, using, destroying, and replacing keys. It also simplifies cryptographic protocol
-              design, removes the need for key servers, and negates the necessity of specialized user procedures.
-
-              Moreover, this approach addresses one of the most formidable challenges in encryption: securely
-              distributing
-              keys to numerous devices in the field without the need for additional technologies. The first layer of
-              encryption utilizes the advanced One-Time Pad (OTP) cipher, renowned for its mathematical robustness
-              against
-              any level of computational attack. This cipher achieves "Perfect Secrecy," meaning that the ciphertext
-              provides no clues about the original plaintext or the key, ensuring that possession of the ciphertext
-              alone
-              is useless for decryption.
-
-              The system's design incorporates tamper resistance and a self-destruct feature, enhancing security even if
-              the encryption devices are accessed unauthorizedly or seized. It adheres to Kerckhoffs's principle, which
-              states that a cryptographic system's security should rely solely on the secrecy of the key, not the
-              algorithm or its implementation. This principle ensures that the security integrity remains intact even if
-              the algorithm or system details become public knowledge.
+              parties, eliminating the need for key management. 
             </div>
           </div>
           <div class="faq">
@@ -445,7 +427,7 @@
               transferring encrypted data.
               The sender and receiver pre shared their daily pass phrase in order to create on the spot the
               encryption/decryption keys.Pure OTP Cipher.
-              Encryption Keys are never stored anywhere or exchanged with the communicating party.Encryption Keys are
+              Encryption Keys are never stored anywhere or exchanged with the communicating party. Encryption Keys are
               crated on spot by the user and then permanently erased from the cipher machine.
               </p>
             </div>
